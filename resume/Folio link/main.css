@@ -1,0 +1,107 @@
+/* Index Nav bar */
+.navbar{
+    position: relative;
+    z-index: 999;
+    top:50px;
+    margin-left: 600px;
+    margin-right: -2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    background:#0E79B2 ;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 25px;
+    font-family: 'PT Serif', serif;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background:rgb(0, 105, 137);
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.navbar li a {
+    color: whitesmoke;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar li:hover ul {
+    display: block;
+    height: 160px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.navbar ul li ul li a:hover{
+    background-color:beige;
+    border-radius: 10px;
+}
+
+.nav-item :hover{
+    color: blueviolet;
+}
+
+/* floating sticky social media bar */
+.icon-bar a:hover {
+    background-color: #33DDFF;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  /* Project slide show */
+
+  /* slide show end */
+
+  /* Projects nav bar */
+  #navbar1{
+    position: relative;
+    z-index: 999;
+    top:0px;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
