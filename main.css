@@ -1,0 +1,860 @@
+
+/* Index Nav bar influenced from Project 1 - Resume */
+.navbar {
+  position: relative;
+  z-index: 999;
+  margin-top: 25px;
+  align-items: center;
+}
+
+/* Getting rid of horizontal scroll wheel */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* Sticky social media modal */
+/* Add this to your custom CSS file */
+.icon-bar {
+  position: fixed; /* Make sure it stays on the screen */
+  bottom: 20px; /* Adjust distance from the bottom of the screen */
+  left: 20px; /* Adjust distance from the left of the screen */
+  z-index: 9999; /* Ensure it's on top of other content */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.icon-bar a:hover {
+  background-color: #007bff; /* Highlight on hover */
+}
+
+
+
+.nav-item{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 25px;
+  font-family: 'PT Serif', serif;
+}
+
+/* NAV bar font - google fonts */
+.nav-item > .nav-link{
+  font-family: 'Acme', sans-serif;
+}
+
+.nav-item > .btn{
+  font-family: 'Acme', sans-serif;
+}
+
+/* Project page heading font */
+.nav-item > .nav-link-p{
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Project page -Modal para font- */
+.modal-body > .container-fluid{
+  font-family: 'Acme', sans-serif;
+}
+
+.col > ul > li{
+  font-family: 'Acme', sans-serif;
+}
+
+.btn1{
+  /* background: #0E79B2; */
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 25px;
+  font-family: 'PT Serif', serif;
+  width: 150px;
+}
+
+.btn-info{
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 25px;
+  font-family: 'PT Serif', serif;
+  width: 150px;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background: rgb(0, 105, 137);
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar li a {
+  color: whitesmoke;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navbar li:hover ul {
+  display: block;
+  height: 120px;
+  width: fit-content;
+  border-radius: 10px 10px 15px 15px;
+  left: 15px;
+}
+
+.navbar ul li ul li a:hover {
+  background-color:#0E79B2 ;
+  border-radius: 10px;
+}
+
+.nav-item > .btn1:hover {
+  color: black;
+}
+
+.nav-item > .btn-info:hover {
+  color: black;
+}
+
+/* NAV BAR END */
+
+/* floating sticky social media bar */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #33DDFF;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+
+/* Projects nav bar */
+#navbar1 {
+  position: relative;
+  z-index: 999;
+  top: 0px;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Name Animation /Start/*/
+@import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
+
+svg {
+  font-family: "Sono", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* Used web-tool-code animation */
+svg text {
+  animation: stroke 4s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Signika', sans-serif;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+
+
+
+
+/* Name animation -END */
+
+
+
+/* education section */
+#edu {
+  background-color: rgb(0, 105, 137);
+  border: 30px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+.progress {
+  height: 40px;
+  margin: 20px 0px 0px;
+}
+
+#edu >h1{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+/* Service section */
+.accordion {
+  background-color: rgb(0, 105, 137);
+  border: 30px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+.accordion >h1{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+.accordion-header > .accordion-button{
+  font-family: 'Kalam', cursive;
+}
+
+
+.accordion-item {
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius:10px ;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+h2 .accordion-button {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  background: #0E79B2 !important;
+  font-size: large;
+}
+
+.accordion-body{
+  font-family: 'Playpen Sans', cursive;
+}
+
+/* modal */
+#myModal {
+  background-color: none;
+  color: black;
+}
+
+#myModal > h4 {
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'PT Serif', serif;
+
+}
+
+/* logo */
+#logo {
+  width: 20px;
+  height: 5px;
+}
+
+/* carousel headings */
+
+.first {
+  font-size: 40px;
+  text-align: inherit;
+}
+
+/* carousel animation */
+.carousel-item {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+/* Sourced from web tools code */
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Carousel images */
+.drill {
+  margin-bottom: 80px;
+}
+
+.torch {
+  margin-bottom: 100px;
+  margin-left: 35px;
+}
+
+.blender {
+  margin-bottom: 110px;
+  margin-left: 20px;
+}
+
+.res-med{
+  margin-bottom: 150px;
+}
+
+bootstrap.bundle.min.js / bootstrap.bundle.js 
+.skate-stand-cad{
+  margin-bottom: 60px;
+}
+.bbq {
+  margin-bottom: 120px;
+}
+
+.sim {
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.skate {
+  margin-bottom: 50px;
+  height: auto px;
+  width: 40px;
+}
+
+.flood {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.magimix {
+  margin-bottom: 90px;
+}
+
+.space {
+  margin-bottom: 50px;
+}
+
+.butterfly { 
+  margin-bottom: 90px;
+}
+
+.magimix-post {
+  margin-bottom: 80px;
+}
+
+.bbq-post {
+  margin-bottom: 90px;
+  margin-left: 20px;
+}
+
+.circular{
+  margin-bottom: 160px;
+}
+
+.karen-post {
+  margin-bottom: 90px;
+}
+
+.flood-post {
+  margin-bottom: 90px;
+}
+
+/* Modal images */
+.modal-body>.img-thumbnail {
+  margin-left: 32px;
+  margin-bottom: 30px;
+  background: none;
+  border: none;
+}
+
+
+/* Pop up info pages */
+.card {
+  background-color: #0E79B2;
+}
+
+.img-thumbnail {
+  width: 700px;
+  height: auto;
+}
+
+.bck-btn {
+  width: 100px;
+  height: auto;
+}
+
+/* Media queries -START- */
+
+@media (max-width: 575.98px) {
+
+  /* Name animation component */
+  svg text {
+    font-size: 4em;
+  }
+
+
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  p {
+    color: green;
+  }
+
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  p {
+    color: blue;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p {
+    color: orange;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  p {
+    color: grey;
+  }
+}
+
+/* // Extra Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  p {
+    color: maroon;
+  }
+}
+
+/* MEDIA QUERIES - End */
+
+
+/* Name animation  */
+#name{
+  animation: myAnim 3s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    38% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    55% {
+      animation-timing-function: ease-in;
+      transform: translateY(-65px);
+    }
+  
+    72% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    81% {
+      animation-timing-function: ease-in;
+      transform: translateY(-28px);
+    }
+  
+    90% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    95% {
+      animation-timing-function: ease-in;
+      transform: translateY(-8px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  }
+
+  /* HERO animation */
+
+  .heroimg {
+    border: 10px solid #0E79B2;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+    border-radius: 180px;
+    margin-left: -17px;
+  }
+
+  @keyframes myAnim {
+    0% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  /* AChivements  */
+  .gallery-wrap,#gallery {
+    overflow: hidden;
+    background-color:  rgb(0, 105, 137);
+    border: 10px;
+    border-radius: 20px;
+
+  }
+
+  .gallery > img{
+    max-width: 100%;
+    height: auto;
+    background-color: none;
+  }
+
+  .inside {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .inside img {
+    float: left;
+    width: 100%;
+  }
+
+  img.lights:hover {
+    filter: drop-shadow(5px 5px 10px red);
+    }
+
+/* Experience Section --START-- */
+#exp{
+    background-color: rgb(0, 105, 137);
+    border: 30px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 1em;
+  }
+
+  #exp > h1{
+    background: #0E79B2;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+  }
+
+  .container-fluid> .card-text{
+    font-family: 'Playpen Sans', cursive;
+  }
+
+  /* CARD HOVER - Start */
+
+.card {
+  outline: 4px solid white;
+  transition: outline 1s ease 0s;
+}
+
+.card:hover {
+  filter: drop-shadow(5px 5px 10px red);
+
+}
+
+.bright {
+  filter: brightness(198%);
+}
+
+.bright:hover {
+  transform: scaleX(-1);
+}
+
+.custom-card{
+  height: 150px;
+}
+
+.card-body > .card-title{
+  font-family: 'Kalam', cursive;
+}
+
+/* Time-Based element */
+#yt-vid{
+  background-color: rgb(0, 105, 137);
+  border-radius: 25px;
+  padding: 50px;
+  width: 100%;
+  outline: none;
+}
+
+/* Skills section */
+#skill{
+  background-color: rgb(0, 105, 137);
+  border: 30px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+#skill > h1 {
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+/* Paragraph font */
+.col > .intro{
+  font-family: 'Playpen Sans', cursive;
+}
+
+/* Modal headings */
+#draw-modal > h1 {
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+/* Modal project headings */
+.text > h2{
+  font-family: 'Kalam', cursive;
+}
+
+#CAD-modal > h1 {
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+#PS-modal > h1{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+#P-modal > h1{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+#ENG-modal > h1{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+}
+
+
+/* Carousel headings projects page --START--*/
+
+.carousel-caption > h5{
+  font-family: 'Acme', sans-serif;
+}
+
+.modal-body img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#C1-title{
+  font-family: 'Acme', sans-serif;
+}
+
+#C2-title{
+  font-family: 'Acme', sans-serif;
+}
+
+#C3-title{
+  font-family: 'Acme', sans-serif;
+}
+
+
+/* Skills section --END-- */
+
+/* Contact modal text fonts */
+.modal-body > p{
+  font-family: 'Acme', sans-serif;
+}
+
+/* Skills gallery wrap sizing */
+.gallery-wrap {
+  max-width: 600px; /* Set the maximum width of the gallery wrap */
+  margin: auto; /* Center the gallery wrap on the page */
+}
+
+.gallery-item {
+  width: 100%; /* Ensure each gallery item takes the full width of the container */
+  max-width: 400px; /* Set the maximum width for each gallery item */
+  margin-bottom: 20px; /* Add some spacing between gallery items */
+}
+
+
+/* Modal headings */
+.modal-header{
+  background: #0E79B2;
+  text-decoration: none;
+  border-radius: 0px 0px 18px 18px;
+  font-family: 'Acme', sans-serif;
+  height: 50px;
+}
+
+.cad-header{
+  width: 700px;
+  margin: 0 auto;
+  
+}
+
+
+@media (max-width: 575.98px) {
+
+  /* Name animation component */
+  svg text {
+    font-size: 4em;
+  }
+
+  .cad-header{
+    width: 400px;
+    margin: 0 auto;
+    
+  }
+
+  .modal-title{
+    font-size: 18px;
+  }
+
+  .gallery-wrap,#gallery {
+  width:400px;
+}
+}
